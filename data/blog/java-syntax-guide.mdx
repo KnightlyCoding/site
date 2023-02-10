@@ -106,7 +106,8 @@ You can create an object by using a constructor. Example:
 public class Object {
     public Object() {}
 }
-
+```
+```java
 public class Main {
     Object a = new Object();
 }
@@ -115,9 +116,11 @@ public class Main {
 Note: Main and Object are in two different files.
 Here's an example of how to use an Object:
 ```java
+package folder;
+
 public class Calculator {
-    int a;
-    int b;
+    static int a;
+    static int b;
 
     public Calculator(int ap, int bp) {
         a = ap;
@@ -140,9 +143,12 @@ public class Calculator {
         return a / b;
     }
 }
+```
+```java
+import Calculator.java;
 
 public class Main {
-    Calculator calculator = new Calculator(5, 10);
+    static Calculator calculator = new Calculator(5, 10);
 
     public static void main(String[] args) {
         System.out.println(calculator.add());
@@ -160,6 +166,8 @@ This would return:
 -5
 0.5
 ```
+
+Note: the above code uses imports. Read below section to learn more.
 
 ## Importing Code
 
