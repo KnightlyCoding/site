@@ -19,7 +19,7 @@ If you have this open while you code, you will be able to quickly and easily wri
 ## Creating Files
 
 Java files end in `.java`. All java files must have a class:
-```
+```java
 public class Main {
 
 }
@@ -42,7 +42,7 @@ Variables can also be indicated to be `static`. `static` variables are shared am
 ## Functions
 
 Java Functions have a type, can be declared as `private` or `public`, and can be declared as `static` (all as metioned above).
-```
+```java
 public class Main {
     static int a = 5;
     static int b = 10;
@@ -55,7 +55,7 @@ public class Main {
 
 The `return` statement is required for functions of a type. The two ints in the example above are static so that they can be accessed by the add() function.
 Functions that don't return a type are implemented with type `void`. Here's an example:
-```
+```java
 public class Main {
     static int a = 5;
     static int b = 10;
@@ -68,7 +68,7 @@ public class Main {
 ```
 
 When a Java program is run, the main function is run. Here's an example:
-```
+```java
 public class Main {
     static int a = 5;
     static int b = 10;
@@ -87,7 +87,7 @@ When this program is run, the int 15 will be printed out (System.out.println() i
 Note: the syntax `public static void main(String[] args) {}` is requred for the main function.
 
 Functions can also take in parameters. Example:
-```
+```java
 public class Main {
     static int add(int a, int b) {
         retunr a + b;
@@ -102,7 +102,7 @@ public class Main {
 ## Objects
 
 You can create an object by using a constructor. Example:
-```
+```java
 public class Object {
     public Object() {}
 }
@@ -114,7 +114,7 @@ public class Main {
 
 Note: Main and Object are in two different files.
 Here's an example of how to use an Object:
-```
+```java
 public class Calculator {
     int a;
     int b;
@@ -164,14 +164,14 @@ This would return:
 ## Importing Code
 
 To use an object from a different file, you must import it.
-```
+```java
 import folder/Calculator.java;
 
 public class Main {}
 ```
 
 In this example, Main.java is in the folder "folder." If Main.java and Calculator.java were in the same folder, you could import a package:
-```
+```java
 package folder;
 
 public class Main{}
