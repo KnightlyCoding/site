@@ -6,11 +6,9 @@ company: Knightly Coding
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
-github: https://github.com
+github: https://github.com/nolanknight
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Nolan Knight is a highschool computer scientist. He is currently a member of FRC team 973 "The Greybots." He is a master programmer, and knows eight programming languages. They include: HTML, JavaScript, CSS, Java, Python, Arduino, and C-Sharp.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Nolan Knight is also responsible for starting [Knightly Coding](https://github.com/knightlycoding) to build cool open-source projects.
