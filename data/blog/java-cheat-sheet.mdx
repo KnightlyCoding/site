@@ -1,0 +1,75 @@
+---
+title: 'Java Cheat-sheet'
+date: '2023-02-10'
+lastmod: '2023-02-10'
+tags: ['java', 'cheat-sheet']
+draft: false
+summary: 'A cheet-sheet for easily coding in Java.'
+images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
+authors: ['default']
+---
+
+![tailwind-nextjs-banner](/static/images/twitter-card.png)
+
+# Knightly Coding
+
+This cheat-sheet is for those who have a general understanding of programming. Keep this open while you code for easy Java-programming.
+
+## Key Notes
+
+- All lines end in semicolons.
+- Varaibles and functions must have a declared type. The different variable types are:
+    - `boolean`: a variable that is always either `true` or `false`.
+    - `int`: a number that is not a decimal (Ex. 1, 0, -1)
+    - `String`: text (Ex. "hello")
+    - `char`: a single character (Ex. 'A')
+    - `float`: a number that can be a decimal (Ex. -1.0, 7.2)
+    - `double`: a number that can be a decimal (stores twice as many digits as float)
+- Before the variable or function type, you may indicate if the variable is `private` or `public`.
+- Functions and variables can also be indicated to be `static` (able to be accessed by other functions).
+- Functions must have a return statement that returns a variable of the function type.
+    - `int myFunction() {return 5;}`
+- Functions that don't return a value are of type void.
+    - `void myFunction() {System.out.println("Hello World!");}`
+
+## Java Class
+
+Java files end in `.java`. All java files must have a class.
+The class name must be the name of the file (with the `.java` omitted).
+When the class is run, the main function is run. Example:
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
+
+## Objects & Imports
+
+You can create an object by using a constructor. Example:
+```java
+package folder;
+
+public class Object {
+    public Object() {}
+}
+```
+```java
+import Object.java;
+
+public class Main {
+    Object a = new Object();
+}
+```
+
+Note: Main and Object are in two different files and in the same folder ("folder").
+The line `public Object() {}` is a constructor. Constructors return no type.
+
+## Support
+
+Using the template? Support this effort by giving a star on GitHub, sharing your own blog and giving a shoutout on Twitter or be a project [sponsor](https://github.com/sponsors/timlrx).
+
+## Licence
+
+[MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/master/LICENSE) © [Timothy Lin](https://www.timrlx.com)

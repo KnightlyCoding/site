@@ -1,10 +1,10 @@
 ---
-title: 'Java Syntax Guide'
+title: 'Java Quick Guide'
 date: '2023-02-09'
-lastmod: '2023-02-09'
+lastmod: '2023-02-10'
 tags: ['java', 'guide']
 draft: false
-summary: 'A cheatsheet for quickly making java programs.'
+summary: 'A guide for quickly making java programs.'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default']
 ---
@@ -13,8 +13,7 @@ authors: ['default']
 
 # Knightly Coding
 
-If you have a general understanding of programming, then all you need to start programming in Java is a syntax cheatsheet.
-If you have this open while you code, you will be able to quickly and easily write a Java progarm.
+If you have a general understanding of programming, then all you need to start programming in Java is a simple quick guide.
 
 ## Creating Files
 
@@ -183,6 +182,98 @@ In this example, Main.java is in the folder "folder." If Main.java and Calculato
 package folder;
 
 public class Main{}
+```
+
+## If Statements
+
+In Java, `if` statements check a condition. They can also include `if else` statements and/or `else` statements. Example:
+```java
+if (x > 10) {
+    System.out.println("x is greater than ten.");
+} else if (x < 10) {
+    System.out.println("x is less than 10.")
+} else {
+    System.out.println("x is equal to 10.")
+}
+```
+
+Conditions in `if` statements are booleans. They can use a boolean variable or an equality (Ex. x > 6, x == 6, x != 6).
+Switch statements are alternatives to if statements for when you are checking for many different values of a variable. Example:
+```java
+switch(day) {
+    case 1:
+        System.out.println("It's Monday!");
+        break;
+    case 2:
+        System.out.println("It's Tuesday!");
+        break;
+    case 3:
+        System.out.println("It's Wednesday!");
+        break;
+    case 4:
+        System.out.println("It's Thursay!");
+        break;
+    case 5:
+        System.out.println("It's Friday!");
+        break;
+    case default:
+        System.out.println("It's the weekend!");
+        break;
+}
+```
+Note: default is a catch-all case for anything that is not one of the above cases.
+The `break` key word tells the code to jump to the end of the switch statement after the case returns true.
+
+## Arrays
+
+Arrays are another variable type. They are essentaily a list of variables. Example:
+```java
+public class Main {
+    static char[] alphabet = {'a', 'b', 'c', 'd', 'e'};
+
+    public static void main(String[] args) {
+        System.out.println(alphabet[0]);
+    }
+}
+```
+This would return `a`.
+Each value of an array has an index, starting at 0 then going up by one. In the above example, we print the value at index 0 of the array.
+You can change the value of an index of the array, but once it has been initialized, you can't add or remove indexes.
+
+## Loops
+
+In Java, there are `for` loops, `while` loops, and `for` each loops. Here's an example of a `while` loop:
+```java
+while (x < 3) {
+    x++;
+}
+```
+
+In the above example, the `while` statement takes in a boolean condition and repeats the code inside it until the consition is true.
+Note: The `++` is an increment operator, which sets x equal to x + 1. Here's an example of a `for` loop:
+```java
+for (int i = 0; i < 4; i++) {
+    System.out.println(i);
+}
+```
+
+In the above example, the first statement is the iterator variable. The second condition is the boolean that, when it returns true, stops the loop.
+The third statement is optional. It increments the iterator so that the loop can end. If your loop does not end, your computer might explode.
+Here is an example of a `for` each loop:
+```java
+for (char letter : alpahbet) {
+    System.out.println(letter);
+}
+```
+
+In `for` each loops, you instantiate a variable whose type corresponds to the type of the array. Then, you put a colon and then an array to loop through.
+This example would return:
+```
+a
+b
+c
+d
+etc.
 ```
 
 ## Support

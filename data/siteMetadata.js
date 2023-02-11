@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Knightly Coding',
   author: 'Nolan Knight',
-  headerTitle: 'Knighly Coding',
+  headerTitle: 'Knightly Coding',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
