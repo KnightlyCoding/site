@@ -6,7 +6,7 @@ import { PageSEO } from '@/components/SEO'
 export const POSTS_PER_PAGE = 5
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('guides')
+  const posts = await getAllFilesFrontMatter('blog/guides')
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
     currentPage: 1,
@@ -19,7 +19,7 @@ export async function getStaticProps() {
 export default function Guides({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
-      <PageSEO title={`Guide - ${siteMetadata.author}`} description={siteMetadata.description} />
+      <PageSEO title={`Guides - ${siteMetadata.author}`} description={siteMetadata.description} />
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
